@@ -1,0 +1,10 @@
+<app-header></app-header>
+<main>
+  <ul id="users"> 
+    @for (user of users; track user.id) {
+      <li>
+        <app-user [user]="user"></app-user>
+      </li>
+    }
+  </ul>
+</main>
